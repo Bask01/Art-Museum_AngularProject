@@ -1,0 +1,12 @@
+<table border="1">
+  <tr [ngStyle]="{color: 'purple', backgroundColor: 'pink'}"><th colspan="7">Art on Exhibit</th></tr>
+  <tr [ngStyle]="{color: 'blueviolet'}">
+      <th>Title</th><th>Creator</th><th>Creation Date</th><th>Technique</th>               
+  </tr>
+<tr *ngFor="let adt of artDetails">
+  <td [ngStyle]="{backgroundColor: 'rgb(221, 249, 250)', fontWeight: 'bold'}"><a href="{{adt.url}}" target="_blank">{{adt.title}}</a></td>
+  <td [ngStyle]="{backgroundColor: 'lightyellow'}">{{adt.creator}}</td>
+  <td [ngStyle]="{backgroundColor: 'lightgray', fontWeight: 'bold'}">{{adt.creation_date}}</td>
+  <td [ngStyle]="{backgroundColor: 'rgb(221, 249, 250)', fontWeight: 'bold'}">{{adt.technique}}</td>
+</tr>
+</table>

@@ -1,0 +1,13 @@
+<div mat-dialog-content>
+  <p [ngStyle]="{backgroundColor: 'lightblue'}"><strong>Name:</strong> {{data.Name}}</p>
+  <p [ngStyle]="{backgroundColor: 'lightyellow'}"><strong>JobTitle:</strong> {{data.JobTitle}}</p>
+  <p [ngStyle]="{backgroundColor: 'bisque'}"><strong>Email:</strong> {{data.Email}}</p>
+  <p>This project's built and designed with Angular JS & Material-UI component library</p>
+  <img id="myimg" src = "assets/images/{{data.Photo}}" width="75px">
+</div>
+
+  <div mat-dialog-actions>
+    <button mat-mini-fab (click)="onOK()">
+      OK
+    </button> 
+  </div>

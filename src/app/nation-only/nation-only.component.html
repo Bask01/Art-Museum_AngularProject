@@ -1,0 +1,10 @@
+<!-- get index value of each nation, use this index value for button click event to call related data -->
+<ng-container *ngFor="let nat of this.nationFeatured; index as i" >
+  <button mat-fab color="primary" (click)="displayArtDetails(i)">{{nat.nation}}</button>&nbsp;&nbsp;
+</ng-container>
+
+<hr>
+<!--selected nation's art details will be displayed in this area -->
+<div id="list">
+  <p [innerHTML]="outArea" [ngStyle]="{backgroundColor: 'lightyellow',color : 'purple', fontWeight: 'bold'}"></p>
+</div>
